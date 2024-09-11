@@ -1,3 +1,7 @@
+# This is an edited version of the code
+# Ryan Berry
+# 9/11/2024
+
 import random
 
 def ask_question(question, answer):
