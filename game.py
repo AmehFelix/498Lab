@@ -1,6 +1,7 @@
 import random
 
 # hello
+# hello 2
 
 def ask_question(question, answer):
     user_answer = input(question + " ")
