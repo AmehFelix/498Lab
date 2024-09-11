@@ -5,29 +5,28 @@ def ask_question(question, answer):
     return user_answer.lower() == answer.lower()
 
 def main():
-    # Jason Soares - Change: Reworked questions to have point values based on perceived difficulty
     questions = {
-        "What is the capital of France?": ("paris", 1),  
-        "What is 2 + 2?": ("4", 1),  
-        "What is the color of the sky?": ("blue", 1),  
-        "Who wrote 'To Kill a Mockingbird'?": ("harper lee", 2),  
-        "What is the largest planet in our solar system?": ("jupiter", 3)  
+        "What is the capital of France?": "paris",
+        "What is 2 + 2?": "4",
+        "What is the color of the sky?": "blue",
+        "Who wrote 'To Kill a Mockingbird'?": "harper lee",
+        "What is the largest planet in our solar system?": "jupiter"
     }
 
     score = 0
     question_list = list(questions.keys())
     random.shuffle(question_list)
 
+    # Jason Soares - Change: 5 points for right answer, subtract 2 points per wrong answer
     for question in question_list:
-        answer, points = questions[question]
-        if ask_question(question, answer):
+        if ask_question(question, questions[question]):
             print("Correct!")
-            # Jason Soares - Change: Add points instead of static +1
-            score += points
+            score += 5
         else:
             print("Wrong!")
+            score -= 2
 
-    print(f"Your final score is {score} out of {sum(points for _, points in questions.values())}")
+    print(f"Your final score is {score} out of {len(questions)}")
 
 if __name__ == "__main__":
     main()
