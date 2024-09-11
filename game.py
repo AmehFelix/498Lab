@@ -12,6 +12,14 @@ def main():
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
         "What is the largest planet in our solar system?": "jupiter"
     }
+    responses = [
+        "Why are you doing this to me.",
+        "You dull creature....",
+        "I've worked so hard to pick questions that anyone could answer... anyone except you apparently...",
+        "I can't do this anymore.",
+        "Please stop?",
+        "I hate you. I really hate you..."
+    ]
 
     score = 0
     question_list = list(questions.keys())
@@ -22,7 +30,7 @@ def main():
             print("Correct!")
             score += 1
         else:
-            print("Wrong!")
+            print(random.choice(responses))
 
     print(f"Your final score is {score} out of {len(questions)}")
 
