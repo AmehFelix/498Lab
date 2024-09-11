@@ -7,6 +7,7 @@ def ask_question(question, answer):
 def main():
     questions = {
         "What is the capital of France?": "paris",
+        "What is the first 21 digits of pi?": "3.14159265358979323846",
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
