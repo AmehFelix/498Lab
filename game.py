@@ -10,12 +10,16 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter"
+        "What is the largest planet in our solar system?": "jupiter",
+	#added additional question below
+	"In what year was this program last updated?": "2024"
     }
 
     score = 0
     question_list = list(questions.keys())
-    random.shuffle(question_list)
+    #give the user the option of whether to shuffle questions
+    if input("Shuffle questions (default: no)? ") == "yes":
+        random.shuffle(question_list)
 
     for question in question_list:
         if ask_question(question, questions[question]):
