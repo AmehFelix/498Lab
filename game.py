@@ -1,16 +1,20 @@
 import random
 
+#defines question event
 def ask_question(question, answer):
     user_answer = input(question + " ")
     return user_answer.lower() == answer.lower()
 
+#main definition
 def main():
     questions = {
         "What is the capital of France?": "paris",
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter"
+        "What is the largest planet in our solar system?": "jupiter",
+        #added question below
+        "What day of the week is it?": "wednesday"
     }
 
     score = 0
