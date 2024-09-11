@@ -31,20 +31,20 @@ This will add the changes in your staging area to git's commit history, where gi
 Finally, sending your stuff back to a remote repo is the goal for this lab anyways. The command ```git push origin main``` will automatically push your changes to the remote repo you cloned from. If this project started the other way around, i.e. you made a git repo locally first with ```git init```. Then this command would look like ```git push replace_with_url main``` or you could do ```git remote add origin replace_with_url``` and the first command would work.
 
 ### 3. Branching and Commit Reversal
-Create or put in any file you want to your repo and then add, commit, and push that. 
+Create or add any file you want to your repo and then add, commit, and push that. 
 
 Now let's say we F-ed up and the changes in our first commit need to be reworked or something, idk. But we also want to keep a backup of those changes, in case they're important later.
 
-We will make a branch from main, navigate back to main, and reverse the first commit.
+We will make a branch from main, and back in main, we will reverse the first commit.
 
 Branching is straight forward ```git checkout -b replace_with_branch_name``` will create and move you to that branch. You can see all the branches in a repo with ```git branch```. Going back to main would be ```git checkout master```.
 
 Next we can use ```git log``` to find the commit with the changes to the program. 
 ![image](https://github.com/user-attachments/assets/c84840b1-e45d-49d7-a567-64b350a4b30f)
 
-Copy the commit ID (the hash), and then put that in this command ```git reverse replace_with_commit_ID```. Make sure you're doing this is main. 
+Copy the commit ID, and then put that in this command ```git reverse replace_with_commit_ID```. Make sure you're doing this is main. 
 
-Next, push these changes back to GitHub. And also push your branch with ```git push origin replace_with_branch_name````
+Next, push these changes back to GitHub. And also push your branch to remote with ```git push origin replace_with_branch_name````
 
 ### 4. Stuff to note 
 #### Code Spaces
@@ -61,7 +61,7 @@ And to push a new branch to the remote repo ```git push origin replace_with_bran
 
 These are features of GitHub itself. Pull Requests will allow you to merge your repo with a parent repo after forking, or a branch with the main codebase, and can act as a way to review changes as well. It's useful for suggesting changes from a GitHub account without access to the main codebase. 
 
-Issues may also be useful to us as a way to track bugs and other issues that come up. This is something you should suggest to your clients, if they use GitHub. Internal you can use it for documenting suggestions, managing tasks, or just recording your progress.
+Issues may alos be useful to us as a way to track bugs and other issues that come up. This is something you should suggest to your clients, if they use GitHub. Internal you can use it for documenting suggestions, managing tasks, or just recording your progress.
 
 ### 5. Submission
 Include a folder called "submissions" in your new repositories and add screenshots of Task 1 and Task 2. Task 3 I should be able to see in your repo's GitHub page.
@@ -70,6 +70,6 @@ In Task 1, your screenshot should include the correct output of the program and 
 
 In Task 2, Show in your command line, the commit and push outputs after running the commands.
 
-For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
+For Task 3, I need to see that your main branch has no changes to the program and has the new file you uploaded, while your branch has the corrected program
 
-Finally, **! and most importantly !**, make a Pull Request on my repository that you forked from so I can find what you did.
+Finally, make a Pull Request on my repository that you forked from so I can find what you did.
