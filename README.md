@@ -1,5 +1,18 @@
 # 498 GitHub Lab
 
+### Submission
+Include a folder called "submissions" in your new repositories and add screenshots of Task 1 and Task 2. Task 3 I should be able to see in your repo's GitHub page.
+
+In Task 1, your screenshot should include the correct output of the program and the command line should show that you are in a git repository
+
+In Task 2, Show in your command line, the commit and push outputs after running the commands.
+
+For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
+
+Finally, **! and most importantly !**, make a Pull Request on this repository so I can find what you did. 
+
+Also most importantly, **! Include your name somewhere in the Pull Request title !**
+
 ### Setting up Git
 If you haven't already, install Git on your system 
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -93,13 +106,3 @@ These are features of GitHub itself. Pull Requests will allow you to merge your 
 
 Issues may also be useful to us as a way to track bugs and other issues that come up. This is something you should suggest to your clients, if they use GitHub. Internal you can use it for documenting suggestions, managing tasks, or just recording your progress.
 
-### 5. Submission
-Include a folder called "submissions" in your new repositories and add screenshots of Task 1 and Task 2. Task 3 I should be able to see in your repo's GitHub page.
-
-In Task 1, your screenshot should include the correct output of the program and the command line should show that you are in a git repository
-
-In Task 2, Show in your command line, the commit and push outputs after running the commands.
-
-For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
-
-Finally, **! and most importantly !**, make a Pull Request on this repository so I can find what you did.
