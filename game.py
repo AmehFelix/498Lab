@@ -23,8 +23,7 @@ def main():
             score += 1
         else:
             print("Wrong!")
-
+            
     print(f"Your final score is {score} out of {len(questions)}")
-
 if __name__ == "__main__":
     main()
