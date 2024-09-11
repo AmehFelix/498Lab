@@ -6,6 +6,8 @@ def ask_question(question, answer):
 
 def main():
     questions = {
+        #test commit! added a question about George Orwell :wq
+        "Who is the author of 1984?": "george orwell",
         "What is the capital of France?": "paris",
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
