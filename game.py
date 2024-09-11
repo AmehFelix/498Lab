@@ -1,6 +1,5 @@
 import random
 #there was no error lol
-#test
 def ask_question(question, answer):
     user_answer = input(question + " ")
     return user_answer.lower() == answer.lower()
