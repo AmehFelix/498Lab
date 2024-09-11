@@ -3,16 +3,15 @@ import random
 def ask_question(question, answer):
     user_answer = input(question + " ")
     return user_answer.lower() == answer.lower()
-#cool stuff
+
 def main():
     questions = {
         "What is the capital of France?": "paris",
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter",
-        "What is the color of the sun?": "yellow"
-}
+        "What is the largest planet in our solar system?": "jupiter"
+    }
 
     score = 0
     question_list = list(questions.keys())
