@@ -20,7 +20,7 @@ In your local coding environment terminal, navigate to a folder you can clone th
 
 ```git clone replace_with_url``` 
 
-In your local environment, fix up the porgram included in the repo. For each change you make, include in a comment above that line what the previous code was or what the issue was
+In your local environment, add some comments to program included in the repo. For each change you make, include in a comment above that line what the previous code was or what the issue was
 
 ### 2. Pushing and Pulling
 #### Using git add
@@ -68,7 +68,7 @@ Going back to main would be ```git checkout master```.
 Next we can use ```git log``` to find the commit with the changes to the program. 
 ![image](https://github.com/user-attachments/assets/c84840b1-e45d-49d7-a567-64b350a4b30f)
 
-Copy the commit ID (the hash), and then put that in this command ```git reverse replace_with_commit_ID```. Make sure you're doing this is main. 
+Copy the commit ID (the hash), and then put that in this command ```git revert replace_with_commit_ID```. Make sure you're doing this is main. 
 
 Next, push these changes back to GitHub. And also push your branch with ```git push origin replace_with_branch_name````
 
