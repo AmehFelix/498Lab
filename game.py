@@ -12,7 +12,7 @@ def main():
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
         "What is the largest planet in our solar system?": "jupiter"
     }
-    #hi 
+
     score = 0
     question_list = list(questions.keys())
     random.shuffle(question_list)
