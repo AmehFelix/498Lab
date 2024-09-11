@@ -10,8 +10,7 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter",
-        "What is the meaning of life?": "42"
+        "What is the largest planet in our solar system?": "jupiter"
     }
 
     score = 0
