@@ -16,19 +16,41 @@ At the top of your forked repo, check out the options available if you click on 
 In this lab, we'll be working with git bash. There are other good options such as GitHub Desktop or GitHub's CLI tool
 
 ### 1. Cloning
-In your local coding environment terminal, navigate to a folder you can clone this repo into and enter ```git clone replace_with_url``` 
+In your local coding environment terminal, navigate to a folder you can clone this repo into and enter 
+
+```git clone replace_with_url``` 
 
 In your local environment, fix up the porgram included in the repo. For each change you make, include in a comment above that line what the previous code was or what the issue was
 
 ### 2. Pushing and Pulling
 #### Using git add
-We can add untracked changes/files to gits staging area. These changes will be what get committed when you use git commit. To add a single file ```git add replace_with_file_path``` or add all untracked changes in the repository ```git add .```
+We can add untracked changes/files to gits staging area. These changes will be what get committed when you use git commit. To add a single file 
+
+```git add replace_with_file_path``` 
+
+or add all untracked changes in the repository ```git add .```
 
 #### Using git commit
-This will add the changes in your staging area to git's commit history, where git tracks all commits made. You can also revert the most recent commit with ```git reset --soft HEAD~1 ```, or revert a commit with a commit ID using ```git reset replace_with_ID ```. To find a commit's ID, run ```git log``` to view the commit history. Making a commit usually looks like this ```git commit -m "replace_with_message"``` The message you enter will allow you to figure out what each commit did/does. 
+This will add the changes in your staging area to git's commit history, where git tracks all commits made. You can also revert the most recent commit with 
+
+```git reset --soft HEAD~1 ```, 
+
+or revert a commit with a commit ID using ```git reset replace_with_ID ```. 
+
+To find a commit's ID, run ```git log``` to view the commit history. 
+
+Making a commit usually looks like this ```git commit -m "replace_with_message"``` The message you enter will allow you to figure out what each commit did/does. 
 
 #### Using git push
-Finally, sending your stuff back to a remote repo is the goal for this lab anyways. The command ```git push origin main``` will automatically push your changes to the remote repo you cloned from. If this project started the other way around, i.e. you made a git repo locally first with ```git init```. Then this command would look like ```git push replace_with_url main``` or you could do ```git remote add origin replace_with_url``` and the first command would work.
+Finally, sending your stuff back to a remote repo is the goal for this lab anyways. 
+
+The command ```git push origin main``` will automatically push your changes to the remote repo you cloned from. 
+
+If this project started the other way around, i.e. you made a git repo locally first with ```git init```. 
+
+Then this command would look like ```git push replace_with_url main``` 
+
+or you could do ```git remote add origin replace_with_url``` and the first command would work.
 
 ### 3. Branching and Commit Reversal
 Create or put in any file you want to your repo and then add, commit, and push that. 
@@ -37,7 +59,11 @@ Now let's say we F-ed up and the changes in our first commit need to be reworked
 
 We will make a branch from main, navigate back to main, and reverse the first commit.
 
-Branching is straight forward ```git checkout -b replace_with_branch_name``` will create and move you to that branch. You can see all the branches in a repo with ```git branch```. Going back to main would be ```git checkout master```.
+Branching is straight forward ```git checkout -b replace_with_branch_name``` will create and move you to that branch. 
+
+You can see all the branches in a repo with ```git branch```. 
+
+Going back to main would be ```git checkout master```.
 
 Next we can use ```git log``` to find the commit with the changes to the program. 
 ![image](https://github.com/user-attachments/assets/c84840b1-e45d-49d7-a567-64b350a4b30f)
@@ -51,9 +77,13 @@ Next, push these changes back to GitHub. And also push your branch with ```git p
 While we're here, also check out codespaces. Really simple way to make quick changes or to work without access to your local machine. **HOWEVER** codespace sessions expire, they cannot be saved, without committing changes of course, and there is a usage limit. So this needs to be noted when using codespaces
 
 #### Branching
-This is the best way to coordinate multiple people working on the same GitHub project. In your local CLI, the command ```git checkout -b replace_with_branch_name``` will create a new branch or switch to that branch if it already exists. Changes here will not affect main . 
+This is the best way to coordinate multiple people working on the same GitHub project. 
 
-To merge branches to main, first switch to main ```git checkout main``` and then run ```git merge replace_with_branch_name```. 
+In your local CLI, the command ```git checkout -b replace_with_branch_name``` will create a new branch or switch to that branch if it already exists. Changes here will not affect main . 
+
+To merge branches to main, first switch to main ```git checkout main``` 
+
+and then run ```git merge replace_with_branch_name```. 
 
 And to push a new branch to the remote repo ```git push origin replace_with_branch_name```
 
@@ -72,4 +102,4 @@ In Task 2, Show in your command line, the commit and push outputs after running 
 
 For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
 
-Finally, **! and most importantly !**, make a Pull Request on my repository that you forked from so I can find what you did.
+Finally, **! and most importantly !**, make a Pull Request on this repository so I can find what you did.
