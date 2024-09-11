@@ -10,9 +10,7 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter",
-        #Added one more prompt
-        "What is the class code for Senior Design?": "CIS 498"
+        "What is the largest planet in our solar system?": "jupiter"
     }
 
     score = 0
