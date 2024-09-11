@@ -10,7 +10,10 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter"
+        "What is the largest planet in our solar system?": "jupiter",
+        #added these two questions
+        "What is the color of grass?": "green",
+        "What language is this written in?": "python"
     }
 
     score = 0
@@ -22,7 +25,8 @@ def main():
             print("Correct!")
             score += 1
         else:
-            print("Wrong!")
+            #changed the response to an incorrect answer
+            print("Your response was incorrect.")
 
     print(f"Your final score is {score} out of {len(questions)}")
 
