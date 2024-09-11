@@ -10,9 +10,10 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter"
+        "What is the largest planet in our solar system?": "jupiter",
+        "What's updog?": "nothing much"
     }
-
+# added a question
     score = 0
     question_list = list(questions.keys())
     random.shuffle(question_list)
