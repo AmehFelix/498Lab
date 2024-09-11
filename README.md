@@ -1,5 +1,18 @@
 # 498 GitHub Lab
 
+### Submission
+Include a folder called "submissions" in your new repositories and add screenshots of Task 1 and Task 2. Task 3 I should be able to see in your repo's GitHub page.
+
+In Task 1, your screenshot should include the correct output of the program and the command line should show that you are in a git repository
+
+In Task 2, Show in your command line, the commit and push outputs after running the commands.
+
+For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
+
+Finally, **! and most importantly !**, make a Pull Request on this repository so I can find what you did. 
+
+Also most importantly, **! Include your name somewhere in the Pull Request title !**
+
 ### Setting up Git
 If you haven't already, install Git on your system 
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -20,7 +33,7 @@ In your local coding environment terminal, navigate to a folder you can clone th
 
 ```git clone replace_with_url``` 
 
-In your local environment, fix up the porgram included in the repo. For each change you make, include in a comment above that line what the previous code was or what the issue was
+In your local environment, add some comments to program included in the repo. For each change you make, include in a comment above that line what the previous code was or what the issue was
 
 ### 2. Pushing and Pulling
 #### Using git add
@@ -68,7 +81,7 @@ Going back to main would be ```git checkout master```.
 Next we can use ```git log``` to find the commit with the changes to the program. 
 ![image](https://github.com/user-attachments/assets/c84840b1-e45d-49d7-a567-64b350a4b30f)
 
-Copy the commit ID (the hash), and then put that in this command ```git reverse replace_with_commit_ID```. Make sure you're doing this is main. 
+Copy the commit ID (the hash), and then put that in this command ```git revert replace_with_commit_ID```. Make sure you're doing this is main. 
 
 Next, push these changes back to GitHub. And also push your branch with ```git push origin replace_with_branch_name````
 
@@ -93,13 +106,3 @@ These are features of GitHub itself. Pull Requests will allow you to merge your 
 
 Issues may also be useful to us as a way to track bugs and other issues that come up. This is something you should suggest to your clients, if they use GitHub. Internal you can use it for documenting suggestions, managing tasks, or just recording your progress.
 
-### 5. Submission
-Include a folder called "submissions" in your new repositories and add screenshots of Task 1 and Task 2. Task 3 I should be able to see in your repo's GitHub page.
-
-In Task 1, your screenshot should include the correct output of the program and the command line should show that you are in a git repository
-
-In Task 2, Show in your command line, the commit and push outputs after running the commands.
-
-For Task 3, your main branch should have no changes to the program and the new file you uploaded, while your branch will have the corrected program and everything else.
-
-Finally, **! and most importantly !**, make a Pull Request on this repository so I can find what you did.
