@@ -70,7 +70,7 @@ Create or put in any file you want to your repo and then add, commit, and push t
 
 Now let's say we F-ed up and the changes in our first commit need to be reworked or something, idk. But we also want to keep a backup of those changes, in case they're important later.
 
-We will make a branch from main, navigate back to main, and reverse the first commit.
+We will make a branch from main, navigate back to main, and revert the first commit.
 
 Branching is straight forward ```git checkout -b replace_with_branch_name``` will create and move you to that branch. 
 
@@ -83,7 +83,7 @@ Next we can use ```git log``` to find the commit with the changes to the program
 
 Copy the commit ID (the hash), and then put that in this command ```git revert replace_with_commit_ID```. Make sure you're doing this is main. 
 
-Next, push these changes back to GitHub. And also push your branch with ```git push origin replace_with_branch_name````
+Next, push these changes back to GitHub. And also push your branch with ```git push origin replace_with_branch_name```
 
 ### 4. Stuff to note 
 #### Code Spaces
@@ -92,7 +92,7 @@ While we're here, also check out codespaces. Really simple way to make quick cha
 #### Branching
 This is the best way to coordinate multiple people working on the same GitHub project. 
 
-In your local CLI, the command ```git checkout -b replace_with_branch_name``` will create a new branch or switch to that branch if it already exists. Changes here will not affect main . 
+In your local CLI, the command ```git checkout -b replace_with_branch_name``` will create a new branch and switch to that branch. Changes here will not affect main . 
 
 To merge branches to main, first switch to main ```git checkout main``` 
 
