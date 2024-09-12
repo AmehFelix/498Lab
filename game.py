@@ -2,7 +2,7 @@ import random
 
 def ask_question(question, answer):
     user_answer = input(question + " ")
-    return user_answer.lower() == answer.lower()
+    return user_answer.lower() == answer.lower()    #return result of comparison (put all in lowercase to prevent silly issues with capitalization)
 
 def main():
     questions = {
@@ -17,14 +17,16 @@ def main():
     question_list = list(questions.keys())
     random.shuffle(question_list)
 
-    for question in question_list:
-        if ask_question(question, questions[question]):
+    for question in question_list:  #while list has next and assign next question to "question"
+        if ask_question(question, questions[question]): #if returns true
             print("Correct!")
             score += 1
         else:
             print("Wrong!")
 
     print(f"Your final score is {score} out of {len(questions)}")
+    #if score == 0:
 
+# somehow, this is the only way the main function can be entered
 if __name__ == "__main__":
     main()
