@@ -1,5 +1,4 @@
-Hi, I edited this file!
-# 498 GitHub Lab
+# Annette Limoges - 498 GitHub Lab
 ### 0. Setting up Git
 
 #### 0a
