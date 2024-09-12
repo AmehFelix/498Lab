@@ -17,12 +17,14 @@ def main():
     question_list = list(questions.keys())
     random.shuffle(question_list)
 
+    # Jason Soares - Change: 5 points for right answer, subtract 2 points per wrong answer
     for question in question_list:
         if ask_question(question, questions[question]):
             print("Correct!")
-            score += 1
+            score += 5
         else:
             print("Wrong!")
+            score -= 2
 
     print(f"Your final score is {score} out of {len(questions)}")
 
