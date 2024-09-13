@@ -18,15 +18,26 @@ def main():
     random.shuffle(question_list)
 
     for question in question_list:  #while list has next and assign next question to "question"
-        if ask_question(question, questions[question]): #if returns true
+        if ask_question(question, questions[question]): #if function returns true
             print("Correct!")
             score += 1
         else:
             print("Wrong!")
 
     print(f"Your final score is {score} out of {len(questions)}")
-    #if score == 0:
+    # just some friendly feedback at the end of the quiz:
+    if score == 0:
+        print("you failed, there is no hope for you!")
+    else:
+        if score < 3:
+            print("that sucked, you didn't even get half!")
+        else:
+            if score < 5:
+                print("actually try next time!")
+            else:
+                print("congrats, you actually passed.")
 
-# somehow, this is the only way the main function can be entered
+
+# for some reason, this is the only way the main function can be entered
 if __name__ == "__main__":
     main()
