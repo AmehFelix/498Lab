@@ -1,8 +1,10 @@
 import random
 
-def ask_question(question, answer):
+def ask_no_Question(question, answer):
     user_answer = input(question + " ")
     return user_answer.lower() == answer.lower()
+    #this is a comment
+    #comments do nothing
 
 def main():
     questions = {
@@ -13,7 +15,8 @@ def main():
         "What is the largest planet in our solar system?": "jupiter"
     }
 
-    score = 0
+    #changed from score to myScore
+    mySore = 0
     question_list = list(questions.keys())
     random.shuffle(question_list)
 
@@ -24,7 +27,9 @@ def main():
         else:
             print("Wrong!")
 
-    print(f"Your final score is {score} out of {len(questions)}")
+    #print the final score
+    #added characters "your"
+    print(f"Your your final score is {score} out of {len(questions)}")
 
 if __name__ == "__main__":
     main()
