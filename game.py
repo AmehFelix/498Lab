@@ -3,7 +3,7 @@ import random
 def ask_question(question, answer):
     user_answer = input(question + " ")
     return user_answer.lower() == answer.lower()
-
+print("another change")
 def main():
     questions = {
         "What is the capital of France?": "paris",
