@@ -1,3 +1,4 @@
+#change1
 import random
 
 def ask_question(question, answer):
@@ -12,7 +13,7 @@ def main():
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
         "What is the largest planet in our solar system?": "jupiter"
     }
-
+#change2
     score = 0
     question_list = list(questions.keys())
     random.shuffle(question_list)
@@ -28,3 +29,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+#change3
